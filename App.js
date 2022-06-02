@@ -35,16 +35,18 @@ const App = () => {
           />
         )}
       </View>
-
       {modal && (
         <Modal animationType="slide" visible={modal}>
-          <FormularioGasto />
+          <FormularioGasto setModal={setModal} />
         </Modal>
       )}
 
       {isValidPresupuesto && (
         <Pressable onPress={() => setModal(true)}>
-          <Image style={styles.imagen} source={require('../nuevo-gasto.png')} />
+          <Image
+            style={styles.imagen}
+            source={require('./src/img/nuevo-gasto.png')}
+          />
         </Pressable>
       )}
     </View>
@@ -63,7 +65,7 @@ const styles = StyleSheet.create({
     width: 60,
     height: 60,
     position: 'absolute',
-    top: 120,
+    top: 30,
     right: 20,
   },
 });

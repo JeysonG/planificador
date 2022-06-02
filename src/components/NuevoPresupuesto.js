@@ -3,7 +3,7 @@ import {View, Text, TextInput, Pressable, StyleSheet} from 'react-native';
 import globalStyles from '../styles';
 
 const NuevoPresupuesto = ({
-  handleNuevoPresuspuesto,
+  handleNuevoPresupuesto,
   presupuesto,
   setPresupuesto,
 }) => {
@@ -12,7 +12,7 @@ const NuevoPresupuesto = ({
       <Text styles={styles.label}>Definir presupesto</Text>
 
       <TextInput
-        keyboardType="numerci"
+        keyboardType="numeric"
         placeholder="Agrega tu presupuesto: Ej. 300"
         style={styles.input}
         value={presupuesto.toString()}
@@ -21,7 +21,7 @@ const NuevoPresupuesto = ({
 
       <Pressable
         style={styles.boton}
-        onPress={() => handleNuevoPresuspuesto(presupuesto)}>
+        onPress={() => handleNuevoPresupuesto(presupuesto)}>
         <Text style={styles.botonTexto}>Agregar presupuesto</Text>
       </Pressable>
     </View>

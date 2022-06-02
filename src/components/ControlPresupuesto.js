@@ -25,7 +25,7 @@ const ControlPresupuesto = ({presupuesto, gastos}) => {
   return (
     <View style={styles.contenedor}>
       <View style={styles.centrarGrafica}>
-        <Image style={style.imagen} source={require('../img/grafico.jpg')} />
+        <Image style={styles.imagen} source={require('../img/grafico.jpg')} />
       </View>
 
       <View style={styles.contenedorTexto}>
